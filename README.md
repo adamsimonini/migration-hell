@@ -21,3 +21,8 @@ Install a package and then add it to requirements.txt
 ```
 pip install django && pip freeze > requirements.txt
 ```
+
+Run server from within ./MigrationHell
+```
+python manage.py runserver
+```
