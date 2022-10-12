@@ -1,6 +1,6 @@
 [
     {
-      "model": "MigrationHell.farming",
+      "model": "farming.farm",
       "pk": 1,
       "fields": {
         "name": "Chudleigh's Apple Farm",
@@ -11,14 +11,14 @@
       }
     },
     {
-      "model": "MigrationHell.farming",
+      "model": "farming.farm",
       "pk": 2,
       "fields": {
         "name": "Flycreek Farm",
         "product": "apiary",
         "category": "cooperative",
         "municipality": "Spencerville",
-        "farmer": 3
+        "farmer": 2
       }
     }
 ]

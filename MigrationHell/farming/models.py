@@ -7,7 +7,7 @@ class BaseObject(models.Model): # https://docs.djangoproject.com/en/4.1/topics/d
         abstract = True # https://docs.djangoproject.com/en/4.1/topics/db/models/#abstract-base-classes
         ordering = ['name'] # https://docs.djangoproject.com/en/4.1/ref/models/options/#ordering
 
-    name = models.CharField() # https://docs.djangoproject.com/en/4.1/ref/models/fields/
+    name = models.CharField(max_length=100) # https://docs.djangoproject.com/en/4.1/ref/models/fields/
 
 class Farmer(BaseObject):
     age = models.IntegerField()
@@ -16,7 +16,7 @@ class Farmer(BaseObject):
 class Farm(BaseObject):
     PRODUCT = [
         ('dairy', 'Dairy'),
-        ('poultry', 'P:oultry'),
+        ('poultry', 'Poultry'),
         ('flower', 'Flower'),
         ('organic', 'Organic'),
         ('fish', 'Fish'),
@@ -35,7 +35,7 @@ class Farm(BaseObject):
         max_length = 40,
         choices = CATEGORY,
     )
-    municipality = models.CharField()
+    municipality = models.CharField(max_length=150)
     farmer = models.ForeignKey(Farmer, on_delete=models.CASCADE) # https://docs.djangoproject.com/en/4.1/topics/db/examples/many_to_one/#many-to-one-relationships
 
 

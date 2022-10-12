@@ -1,6 +1,6 @@
 [
     {
-      "model": "MigrationHell.farming",
+      "model": "farming.farmer",
       "pk": 1,
       "fields": {
         "name": "Old McDonald",
@@ -9,7 +9,7 @@
       }
     },
     {
-      "model": "MigrationHell.farming",
+      "model": "farming.farmer",
       "pk": 2,
       "fields": {
         "name": "Samantha Kelly",

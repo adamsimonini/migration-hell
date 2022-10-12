@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # each app you create must be added to the list of installed apps
+    "farming.apps.FarmingConfig"
 ]
 
 MIDDLEWARE = [
