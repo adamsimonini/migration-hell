@@ -5,7 +5,7 @@
       "fields": {
         "name": "Old McDonald",
         "age": "51",
-        "married": "False"
+        "is_married": "False"
       }
     },
     {
@@ -14,7 +14,7 @@
       "fields": {
         "name": "Samantha Kelly",
         "age": "36",
-        "married": "True"
+        "is_married": "True"
       }
     }
 ]

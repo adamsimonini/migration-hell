@@ -20,5 +20,16 @@
         "municipality": "Spencerville",
         "farmer": 2
       }
+    },
+    {
+      "model": "farming.farm",
+      "pk": 3,
+      "fields": {
+        "name": "Shelly Farm",
+        "product": "poulty",
+        "category": "commercial",
+        "municipality": "Ajax",
+        "farmer": 2
+      }
     }
 ]

@@ -11,7 +11,7 @@ class BaseObject(models.Model): # https://docs.djangoproject.com/en/4.1/topics/d
 
 class Farmer(BaseObject):
     age = models.IntegerField()
-    married = models.BooleanField()
+    is_married = models.BooleanField()
 
 class Farm(BaseObject):
     PRODUCT = [
@@ -36,6 +36,7 @@ class Farm(BaseObject):
         choices = CATEGORY,
     )
     municipality = models.CharField(max_length=150)
-    farmer = models.ForeignKey(Farmer, on_delete=models.CASCADE) # https://docs.djangoproject.com/en/4.1/topics/db/examples/many_to_one/#many-to-one-relationships
+    # the related_name field allows for a "reverse relationship"
+    farmer = models.ForeignKey(Farmer, on_delete=models.CASCADE, related_name='farms') # https://docs.djangoproject.com/en/4.1/topics/db/examples/many_to_one/#many-to-one-relationships
 
 
