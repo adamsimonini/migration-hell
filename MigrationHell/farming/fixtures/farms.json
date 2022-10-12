@@ -1,0 +1,24 @@
+[
+    {
+      "model": "MigrationHell.farming",
+      "pk": 1,
+      "fields": {
+        "name": "Chudleigh's Apple Farm",
+        "product": "organic",
+        "category": "commercial",
+        "municipality": "Milton",
+        "farmer": 1
+      }
+    },
+    {
+      "model": "MigrationHell.farming",
+      "pk": 2,
+      "fields": {
+        "name": "Flycreek Farm",
+        "product": "apiary",
+        "category": "cooperative",
+        "municipality": "Spencerville",
+        "farmer": 3
+      }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+      "model": "MigrationHell.farming",
+      "pk": 1,
+      "fields": {
+        "name": "Old McDonald",
+        "age": "51",
+        "married": "False"
+      }
+    },
+    {
+      "model": "MigrationHell.farming",
+      "pk": 2,
+      "fields": {
+        "name": "Samantha Kelly",
+        "age": "36",
+        "married": "True"
+      }
+    }
+]

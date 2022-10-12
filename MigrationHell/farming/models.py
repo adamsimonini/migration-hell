@@ -25,7 +25,7 @@ class Farm(BaseObject):
     ]
     CATEGORY = [
         ('commercial', 'Commercial'),
-        ('cocoperative', 'Cooperative'),
+        ('cooperative', 'Cooperative'),
     ]
     product = models.CharField(
         max_length = 40,
@@ -35,7 +35,7 @@ class Farm(BaseObject):
         max_length = 40,
         choices = CATEGORY,
     )
-    location = models.CharField()
+    municipality = models.CharField()
     farmer = models.ForeignKey(Farmer, on_delete=models.CASCADE) # https://docs.djangoproject.com/en/4.1/topics/db/examples/many_to_one/#many-to-one-relationships
 
 
