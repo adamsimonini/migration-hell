@@ -14,24 +14,15 @@ class Farmer(BaseObject):
     age = models.IntegerField()
     is_married = models.BooleanField()
 
+class Product(models.Model):
+    name = models.CharField(max_length=150, blank=False)
+
 class Farm(BaseObject):
-    PRODUCT = [
-        ('dairy', 'Dairy'),
-        ('poultry', 'Poultry'),
-        ('flower', 'Flower'),
-        ('organic', 'Organic'),
-        ('fish', 'Fish'),
-        ('apiary', 'Bee yard'),
-        ('hay', 'Hay'),
-    ]
     CATEGORY = [
         ('commercial', 'Commercial'),
         ('cooperative', 'Cooperative'),
     ]
-    product = models.CharField(
-        max_length = 40,
-        choices = PRODUCT,
-    )
+    products = models.ManyToManyField(Product)
     category = models.CharField(
         max_length = 40,
         choices = CATEGORY,
@@ -42,5 +33,3 @@ class Farm(BaseObject):
     province = models.CharField(max_length=50, blank=True)
     # the related_name field allows for a "reverse relationship"
     farmer = models.ForeignKey(Farmer, on_delete=models.CASCADE, related_name='farms') # https://docs.djangoproject.com/en/4.1/topics/db/examples/many_to_one/#many-to-one-relationships
-
-

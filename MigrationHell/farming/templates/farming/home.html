@@ -23,7 +23,12 @@
                 <li>{{ farm.name }}</li>
             </strong>
             <ul>
-                <li>product: {{ farm.product }}</li>
+                <li>products: 
+                    <!-- grab all products in many to many relationship and display them in lowercase -->
+                    {% for product in farm.products.all %}
+                        {{ product.name|lower }},
+                    {% endfor %}
+                </li>
                 <li>category: {{ farm.category }}</li>
                 <li>municiaplity: {{ farm.municipality }}</li>
             </ul>

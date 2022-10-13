@@ -4,9 +4,10 @@
       "pk": 1,
       "fields": {
         "name": "Chudleigh's Apple Farm",
-        "product": "organic",
+        "products": [1, 2],
         "category": "commercial",
         "municipality": "Milton",
+        "province": "Ontario",
         "farmer": 1
       }
     },
@@ -15,9 +16,10 @@
       "pk": 2,
       "fields": {
         "name": "Flycreek Farm",
-        "product": "apiary",
+        "products": [1, 2],
         "category": "cooperative",
         "municipality": "Spencerville",
+        "province": "Ontario",
         "farmer": 2
       }
     },
@@ -26,9 +28,10 @@
       "pk": 3,
       "fields": {
         "name": "Shelly Farm",
-        "product": "poulty",
+        "products": [1, 2],
         "category": "commercial",
-        "municipality": "Ajax",
+        "municipality": "Victoria",
+        "province": "British Columbia",
         "farmer": 2
       }
     }
