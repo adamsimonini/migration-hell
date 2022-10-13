@@ -39,7 +39,7 @@ class Farm(BaseObject):
     municipality = models.CharField(max_length=150)
     # we'll have to add a default value to province, since we have records in the database and we didn't set blank to true.
     # try setting "blank=True" afterwards, and see what happens in the migration files.
-    province = models.CharField(max_length=50)
+    province = models.CharField(max_length=50, blank=True)
     # the related_name field allows for a "reverse relationship"
     farmer = models.ForeignKey(Farmer, on_delete=models.CASCADE, related_name='farms') # https://docs.djangoproject.com/en/4.1/topics/db/examples/many_to_one/#many-to-one-relationships
 
