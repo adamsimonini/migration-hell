@@ -13,6 +13,8 @@ class BaseObject(models.Model): # https://docs.djangoproject.com/en/4.1/topics/d
 class Farmer(BaseObject):
     age = models.IntegerField()
     is_married = models.BooleanField()
+    # id's already implicitly exist on records from this field. now we're attempting to explcitily add/name a new_id field as primary key
+    # new_id = models.AutoField(primary_key=True)
 
 class Product(models.Model):
     name = models.CharField(max_length=150, blank=False)
