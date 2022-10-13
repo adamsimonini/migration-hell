@@ -60,6 +60,7 @@ python manage.py runserver
 
 Load fixtures from within ./MigrationHell
 ```
+python manage.py loaddata products # only when exists in models
 python manage.py loaddata farmers
 python manage.py loaddata farms
 ```
