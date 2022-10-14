@@ -64,6 +64,11 @@ Run server from within ./MigrationHell
 python manage.py runserver
 ```
 
+Roll back a migration (if possible)
+```
+python manage.py migrate {app_name} {migration_to_roll_back_to}
+```
+
 Load fixtures from within ./MigrationHell
 ```
 python manage.py loaddata products # only when exists in models
