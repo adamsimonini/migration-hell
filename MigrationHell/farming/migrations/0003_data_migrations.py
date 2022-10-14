@@ -11,5 +11,6 @@ class Migration(migrations.Migration):
 
     operations = [
         # this migration assumes there is a farmer record of ID 1, which isn't a safe assumption
-        #  migrations.RunSQL("INSERT INTO farming_farm (name, product, category, municipality, province, farmer_id) VALUES ('Napa Vally Farm', 'dairy', 'commercial', 'Smokey Wood', 'British Columbia', 1);")
+        migrations.RunSQL("INSERT INTO farming_farmer (name, age, is_married) VALUES ('Ronald McDonald', 73, False);"),
+        migrations.RunSQL("INSERT INTO farming_farm (name, product, category, municipality, province, farmer_id) VALUES ('Napa Vally Farm', 'dairy', 'commercial', 'Smokey Wood', 'British Columbia', 1);")
     ]
