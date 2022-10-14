@@ -7,6 +7,7 @@ Optional: install sqlite3 command-line shell: https://www.sqlite.org/download.ht
 ```
 .mode column # sets the output to be structured columns
 .headers on # sets headers on the output
+.open db.sqlite3
 SELECT * FROM farming_farm;
 SELECT * FROM farming_farmer;
 SELECT * FROM django_migrations;
@@ -42,6 +43,11 @@ pip install django && pip freeze > requirements.txt
 <hr/>
 
 ## **Migration Commands**
+
+Show all migrations, which havev been applied, and which haven't, from ./MigrationHell
+```
+python manage.py showmigrations
+```
 
 Make migrations from ./MigrationHell
 ```
